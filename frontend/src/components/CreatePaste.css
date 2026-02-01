@@ -1,0 +1,166 @@
+.create-paste-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.create-paste-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.create-paste-card h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group textarea,
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  transition: border-color 0.3s;
+}
+
+.form-group textarea:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.options-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #fcc;
+}
+
+.success-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+  border-radius: 8px;
+}
+
+.success-box h3 {
+  color: #166534;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.url-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.url-box input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #86efac;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.copy-btn {
+  padding: 10px 20px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.copy-btn:hover {
+  background: #15803d;
+}
+
+.view-link {
+  display: inline-block;
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .options-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .create-paste-card {
+    padding: 20px;
+  }
+}
