@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "java -Dserver.port=$PORT -jar target/*.jar",
+    "startCommand": "java -Dserver.port=$PORT -Dspring.profiles.active=prod -jar target/pastebin-lite-1.0.0.jar",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
